@@ -3,7 +3,7 @@ import { LogoGithub, Notifications } from '@vicons/ionicons5'
 import ThemeSwitch from '../tool-box/ThemeSwitch.vue'
 import KeepAliveSwitch from '../tool-box/KeepAliveSwitch.vue'
 
-const repoName = 'pkg-name'
+const repoName = 'vue-ts'
 const { data } = useFetch<string>(`https://api.github.com/repos/Cheng-DX/${repoName}/releases/latest`)
 
 const repoInfo = computed<{
@@ -17,7 +17,7 @@ const { color } = useTheme()
 <template>
   <div class="header-root">
     <strong>
-      pkg-name
+      vue-ts
     </strong>
     <div class="toolbox">
       <n-badge
