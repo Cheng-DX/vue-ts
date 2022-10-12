@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import TheHeader from './the-header/index.vue'
-import TheMain from './TheMain'
+import TheMain from './TheMain.vue'
 </script>
 
 <template>
