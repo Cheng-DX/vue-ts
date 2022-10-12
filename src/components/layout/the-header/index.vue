@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { LogoGithub, Notifications } from '@vicons/ionicons5'
+import { LogoGithub } from '@vicons/ionicons5'
 import ThemeSwitch from '../tool-box/ThemeSwitch.vue'
 import KeepAliveSwitch from '../tool-box/KeepAliveSwitch.vue'
 
@@ -10,8 +10,6 @@ const repoInfo = computed<{
   name: string
   html_url: string
 }>(() => JSON.parse(data.value || '{}'))
-
-const { color } = useTheme()
 </script>
 
 <template>
@@ -20,15 +18,6 @@ const { color } = useTheme()
       vue-ts
     </strong>
     <div class="toolbox">
-      <n-badge
-        type="info"
-        value="2"
-        class="ml-8 clickable"
-      >
-        <n-icon :color="color" size="20">
-          <Notifications />
-        </n-icon>
-      </n-badge>
       <n-tag
         :bordered="false"
         round

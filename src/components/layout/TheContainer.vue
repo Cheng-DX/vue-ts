@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import TheHeader from './the-header/index.vue'
 import TheMain from './TheMain'
-
-const siderCollapsed = useLocalStorage('__app_store_siderCollapsed', true, { mergeDefaults: true })
 </script>
 
 <template>
