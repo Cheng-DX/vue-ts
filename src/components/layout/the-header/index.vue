@@ -4,7 +4,7 @@ import ThemeSwitch from '../tool-box/ThemeSwitch.vue'
 import KeepAliveSwitch from '../tool-box/KeepAliveSwitch.vue'
 
 const repoName = 'vue-ts'
-const { data } = useFetch<string>(`https://api.github.com/repos/Cheng-DX/${repoName}/tags`)
+const { data } = useFetch<string>(`https://api.github.com/repos/Cheng-DX/${repoName}/releases/latest`)
 
 const repoInfo = computed<{
   name: string
