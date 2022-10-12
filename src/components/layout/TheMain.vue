@@ -8,10 +8,12 @@ import { isKeepAlive } from '~/stores/configs'
     style="height: calc(100% - 60px)"
     content-style="padding: 20px"
   >
-    <KeepAlive v-if="isKeepAlive">
-      <RouterView />
-    </KeepAlive>
-    <RouterView v-else />
+    <router-view v-slot="{ Component }">
+      <KeepAlive v-if="isKeepAlive">
+        <component :is="Component" />
+      </KeepAlive>
+      <component :is="Component" v-else />
+    </router-view>
   </n-layout-content>
 </template>
 
