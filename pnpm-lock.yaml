@@ -24,13 +24,13 @@ specifiers:
   vue-tsc: ^1.0.8
 
 dependencies:
-  '@chengdx/composables': 0.3.0
   '@vueuse/core': 9.3.0_vue@3.2.41
   vue: 3.2.41
   vue-router: 4.1.5_vue@3.2.41
 
 devDependencies:
   '@antfu/eslint-config': 0.27.0_z4bbprzjrhnsfa24uvmcbu7f5q
+  '@chengdx/composables': 0.3.0
   '@chengdx/naive-ui': 0.4.0_naive-ui@2.33.5+vue@3.2.41
   '@types/node': 18.0.6
   '@vicons/ionicons5': 0.12.0
@@ -203,9 +203,6 @@ packages:
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0
-    peerDependenciesMeta:
-      '@babel/core':
-        optional: true
     dependencies:
       '@babel/compat-data': 7.19.4
       '@babel/core': 7.19.3
@@ -219,9 +216,6 @@ packages:
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0
-    peerDependenciesMeta:
-      '@babel/core':
-        optional: true
     dependencies:
       '@babel/core': 7.19.3
       '@babel/helper-annotate-as-pure': 7.18.6
@@ -449,7 +443,7 @@ packages:
       vue: 3.2.41
     transitivePeerDependencies:
       - '@vue/composition-api'
-    dev: false
+    dev: true
 
   /@chengdx/naive-ui/0.4.0_naive-ui@2.33.5+vue@3.2.41:
     resolution: {integrity: sha512-GdSrzAG14vm8k7wpOUO16T3UZMRHZ5PYDSFb5Tu9SFoJNjsvSp7mk/kz7XWcoWGk3ClbXyzO72todbJ+IIh3Bw==}
