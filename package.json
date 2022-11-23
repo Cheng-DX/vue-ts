@@ -17,6 +17,7 @@
     "vue-router": "^4.1.5"
   },
   "devDependencies": {
+    "pnpm": "^7.17.0",
     "@antfu/eslint-config": "^0.27.0",
     "@chengdx/composables": "^0.6.2",
     "@chengdx/naive-ui": "^0.6.2",
