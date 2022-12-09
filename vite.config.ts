@@ -5,9 +5,8 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 import AutoImport from 'unplugin-auto-import/vite'
 import AutoImportComponents from 'unplugin-vue-components/vite'
 import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
-import Inspect from 'vite-plugin-inspect'
-import { autoImportPresets } from '@chengdx/composables'
-import { autoImportApi } from '@chengdx/naive-ui'
+import { presets as composablesPresets } from '@chengdx/composables'
+import { presets as naiveuiPresets } from '@chengdx/naive-ui'
 
 export default defineConfig({
   plugins: [
@@ -23,8 +22,8 @@ export default defineConfig({
         'vue',
         'vue-router',
         '@vueuse/core',
-        autoImportPresets,
-        autoImportApi,
+        composablesPresets,
+        naiveuiPresets,
       ],
       dirs: [
         'src/composables/**',
@@ -39,7 +38,6 @@ export default defineConfig({
         NaiveUiResolver(),
       ],
     }),
-    Inspect(),
   ],
   resolve: {
     alias: {
